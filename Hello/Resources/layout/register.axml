@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="用户注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="用户名："
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="70.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUserName"
+            android:gravity="right" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUserName" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:text="密码："
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="70.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPassword"
+            android:gravity="right" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="确认密码："
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="70.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPassword2"
+            android:gravity="right" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword2"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="28.0dp"
+        android:id="@+id/linearLayout4"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="性别："
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="70.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGender"
+            android:gravity="right" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup1">
+            <RadioButton
+                android:layout_width="244.7dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男"
+                android:id="@+id/rbtnMan" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/rbtnWoman" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:gravity="center_horizontal">
+        <Button
+            android:text="注册"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnRegister" />
+        <Button
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnReturn" />
+    </LinearLayout>
+</LinearLayout>
